@@ -11,6 +11,13 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+
+    display: grid;
+    align-items: center;
+    align-content: center;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 * {
@@ -29,6 +36,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
+
 h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--accent1-color)
@@ -37,6 +45,14 @@ h1, h2, h3 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+nav {
+    display: block;
+    align-items: center;
+    align-content: center;
+
+    float: right;
 }
 
 .socialmedia a {
@@ -80,14 +96,44 @@ article {
 
 
 section{
-    display: block;
+    display: grid;
     position: relative;
     top: 500px;
-    padding: 0px;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 footer {
     position: relative;
     display: block;
     top: 500px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer p {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+footer nav {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+    
+
+section img {
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    padding: 2px;
+}
+
+section h2 {
+    
+    align-self: center;
+    grid-column: 1 / 6;
 }
