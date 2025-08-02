@@ -98,7 +98,7 @@ article {
 section{
     display: grid;
     position: relative;
-    top: 500px;
+    /*top: 500px;*/
     grid-template-rows: 1fr 1fr;
 
 }
