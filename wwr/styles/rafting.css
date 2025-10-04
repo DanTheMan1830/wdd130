@@ -20,6 +20,10 @@ header {
     grid-template-rows: 1fr;
 }
 
+.header img {
+    width: 200px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +84,7 @@ article {
 
 .hero article img {
     float: right;
-    width: auto;
+    width: 200px;
     padding: 5px
 }
 
