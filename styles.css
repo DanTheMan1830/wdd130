@@ -24,6 +24,10 @@
     color: black;
 }
 
+main{
+    grid-column: 2;
+}
+
 main img{
     float: right;
     margin: 5rem;
@@ -36,12 +40,33 @@ main p{
 }
 
 aside {
-    width: 20em;
+    width: 20rem;
+    position: relative;
     text-align: center;
-  }
+    grid-column: 1;
+    grid-row: 1;
+}
 
-  aside h2{
+aside h2{
     position: absolute;
     top: 50px;
     left: 175px;
-  }
+}
+
+nav{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
