@@ -25,6 +25,7 @@
 }
 
 main{
+    position: relative;
     grid-row: 1;
     grid-column: 2;
 }
