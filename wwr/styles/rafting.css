@@ -11,15 +11,21 @@
     /*switch body-font to "Funnel Display", sans-serif*/
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 
     display: grid;
     align-items: center;
-    align-content: center;
+    align-content: space-evenly;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 6fr;
     grid-template-rows: 1fr;
 }
 
@@ -27,11 +33,17 @@ header {
     width: 200px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+nav {
+    display: grid;
+    align-items: normal;
+    align-content: flex-end;
+    text-align: center;
+
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+
 }
+
 
 body {
     font-family: var(--body-font);
@@ -41,6 +53,11 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
 }
 
 .hero {
@@ -69,10 +86,9 @@ h1 {
     color: white;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
+
+
+
 
 article {
     position: absolute;
@@ -91,18 +107,68 @@ article {
 
 section {
     position: relative;
-    text-align: left;
     width: 100%;
     opacity: 0.8;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
 }
 
-.section h2{
+section img{
+
+    grid-row: 2/2;
+    width: 300px;
+    align-self: center;
+}
+
+section p{
+    grid-row: 2/2;
+}
+
+section h2{
+    grid-row: 1;
+    grid-column: 1/5;
+    align-self: center;
+    text-align: center;
     background-color: var(--primary-color);
+
+}
+
+section figure{
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+section figure img{
+    grid-row: 2;
+    width: 165px;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+section figure figcaption{
+    grid-row: 3;
+    align-self: center;
+    text-align: center;
 }
 
 .socialmedia a {
     text-decoration: none;
     padding: 5px;
+}
+
+footer {
+    display: grid;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
 }
 
 footer img {
