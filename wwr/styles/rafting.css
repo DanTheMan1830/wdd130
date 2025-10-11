@@ -111,7 +111,7 @@ section {
     opacity: 0.8;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr;
 
 }
@@ -125,11 +125,12 @@ section img{
 
 section p{
     grid-row: 2/2;
+    grid-column: span 2;
 }
 
 section h2{
     grid-row: 1;
-    grid-column: 1/5;
+    grid-column: span 6;
     align-self: center;
     text-align: center;
     background-color: var(--primary-color);
@@ -139,16 +140,14 @@ section h2{
 section figure{
     display: grid;
     grid-template-rows: 100px 1fr 100px;
-    align-items: center;
-    align-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 
 }
 
 section figure img{
     grid-row: 2;
-    width: 165px;
-    align-items: center;
-    align-content: space-evenly;
+    width: 150px;
 }
 
 section figure figcaption{
