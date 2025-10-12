@@ -61,7 +61,15 @@ img{
     width: 200px;
 }
 
-main img {float: right; height: auto; margin: 5rem; width: 200px;}
+main img {
+    float: right; 
+    height: auto; 
+    margin: 5rem; 
+    width: 200px;
+    border: 1px;
+    padding: 1px;
+    box-shadow: 5px 5px;
+}
 
 main p{
     margin: 5rem;
