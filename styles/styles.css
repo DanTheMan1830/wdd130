@@ -61,9 +61,7 @@ img{
     width: 200px;
 }
 
-main img{
-    float: right; margin: 5rem; width: 200px;
-}
+main img {float: right; height: auto; margin: 5rem; width: 200px;}
 
 main p{
     margin: 5rem;
