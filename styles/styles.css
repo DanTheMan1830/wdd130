@@ -54,12 +54,6 @@ main{
     max-width: 840px;
 }
 
-img{
-    float: right;
-    margin: 5rem;
-    width:200px;
-}
-
 main img{
     float: right;
     margin: 5rem;
@@ -92,7 +86,6 @@ aside {
 }
 
 aside img{
-    float:unset;
     margin: 0px;
     width: 200px;
     height: auto;
