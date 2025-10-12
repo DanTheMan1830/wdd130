@@ -62,9 +62,7 @@ img{
 }
 
 main img{
-    float: right;
-    margin: 5rem;
-    width: 200px;
+    float: right; margin: 5rem; width: 200px;
 }
 
 main p{
