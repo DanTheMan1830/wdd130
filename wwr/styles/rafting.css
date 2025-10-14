@@ -20,13 +20,8 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-
-    display: grid;
-    align-items: center;
-    align-content: space-evenly;
-
-    grid-template-columns: 1fr 2fr 6fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: row;
 }
 
 .header img {
@@ -34,15 +29,13 @@ header {
 }
 
 nav {
-    display: grid;
-    align-items: normal;
-    align-content: flex-end;
-    text-align: center;
-
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-    grid-template-rows: 1fr;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    align-content: space-between;
 }
+
+nav a{padding: 2rem; margin: 10px;}
 
 
 body {
@@ -86,16 +79,12 @@ h1 {
     color: white;
 }
 
-
-
-
-
 article {
     position: absolute;
     text-align: left;
     bottom: 0px;
     
-    opacity: 0.9;
+    opacity: 0.85;
     background-color: var(--misc-color);
 }
 
@@ -107,47 +96,39 @@ article {
 
 section {
     position: relative;
-    width: 100%;
-    opacity: 0.8;
+    width: 99%;
+    opacity: .9;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 80px 1fr 0px;
 
 }
 
 section img{
-
-    grid-row: 2/2;
+    grid-row: 2;
     width: 300px;
     align-self: center;
 }
 
 section p{
-    grid-row: 2/2;
+    grid-row: 2;
     grid-column: span 2;
 }
 
 section h2{
     grid-row: 1;
-    grid-column: span 6;
+    grid-column: span 5;
     align-self: center;
     text-align: center;
     background-color: var(--primary-color);
 
 }
 
-section figure{
-    display: grid;
-    grid-template-rows: 100px 1fr 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-
-}
 
 section figure img{
     grid-row: 2;
-    width: 150px;
+    width: 10rem;
 }
 
 section figure figcaption{
@@ -162,6 +143,7 @@ section figure figcaption{
 }
 
 footer {
+    
     display: grid;
     position: relative;
     align-items: center;
@@ -175,5 +157,7 @@ footer {
 }
 
 footer img {
-    width: 50px
+    
+    width: 50px;
+    height: auto;
 }
