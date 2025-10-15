@@ -1,5 +1,6 @@
 :root {
-    --primary-color: #A6E1FA; /*non-photo blue*/
+    /*--primary-color: #A6E1FA;*/ /*non-photo blue*/
+    --primary-color: #b6e6fb;
     --secondary-color: #2B4162; /*indigo dye*/
     --accent1-color: #582707; /*seal brown*/
     --accent2-color: #CCAD8F; /*tan*/
@@ -96,13 +97,11 @@ article {
 
 section {
     position: relative;
+    margin: 0 auto;
     width: 99%;
     opacity: .9;
-
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 80px 1fr 0px;
-
 }
 
 section img{
@@ -122,9 +121,12 @@ section h2{
     align-self: center;
     text-align: center;
     background-color: var(--primary-color);
-
 }
 
+section figure{
+    width: 10rem;
+    margin: auto;
+}
 
 section figure img{
     grid-row: 2;
@@ -133,8 +135,11 @@ section figure img{
 
 section figure figcaption{
     grid-row: 3;
-    align-self: center;
     text-align: center;
+}
+
+nav a{
+
 }
 
 .socialmedia a {
@@ -160,4 +165,98 @@ footer img {
     
     width: 50px;
     height: auto;
+}
+
+.contact h3{
+    margin-top: .6em;
+    margin-bottom: -.2em;
+    font-size: 1.5em;
+}
+.contact p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.contact {
+    display: grid;
+    opacity: .9;
+    margin-top: .5rem;
+    padding: 0;
+    text-align: center;
+    margin-bottom: .8rem;
+    grid-template-columns: 1.4fr 1fr;
+}
+
+.contact-info{
+    grid-row: 1;
+    grid-column: span 2;
+}
+
+.map{
+    grid-row: 2;}
+
+iframe{
+    width: 350px;
+    height: 332px; 
+    border: 0;
+    margin-top: 5rem;
+    padding: 0;
+}
+
+form{
+    margin-top: 5rem;
+    text-align: left;}
+
+label{
+    margin-right: 1em;}
+
+.radio_options{
+    grid-column: 2;}
+.radio_options label{
+    margin-right: 0em;}
+
+.form_item {
+    padding: .3em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;}
+
+.newsletter {
+    margin-top: 3px;
+    display: block;}
+
+button {
+    display: block;
+    width: 309px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: .4em;
+    box-shadow: 0 0 2px rgba(221, 200, 174, 0.5);
+    background-color: rgb(236, 236, 236);
+    
+}
+
+button:hover{background-color: rgb(243, 243, 243);}
+
+
+input[type="text"] {width: 200px;}
+textarea {width: 19.53rem}
+input[type="radio"]{margin-right:0px;}
+
+.employees {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 10px;
+    background-color:rgb(241, 240, 240);
+    border: 1px solid var(--secondary-color);
+    border-radius: .3em;
+}
+
+.employees h2{
+    font-size: 1.9em;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
 }
