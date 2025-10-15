@@ -152,7 +152,7 @@ footer {
     text-align: center;
 
     grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
     flex-wrap: nowrap;
 }
 
