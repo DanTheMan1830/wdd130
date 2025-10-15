@@ -115,7 +115,7 @@ section p{
     grid-column: span 2;
 }
 
-section h2{
+section h2 {
     grid-row: 1;
     grid-column: span 5;
     align-self: center;
@@ -144,7 +144,6 @@ section figure figcaption{
 }
 
 footer {
-    
     display: grid;
     position: relative;
     align-items: center;
@@ -158,7 +157,6 @@ footer {
 }
 
 footer img {
-    
     width: 50px;
     height: auto;
 }
@@ -230,12 +228,9 @@ button {
     border: 1px solid black;
     border-radius: .4em;
     box-shadow: 0 0 2px rgba(221, 200, 174, 0.5);
-    background-color: rgb(236, 236, 236);
-    
-}
+    background-color: rgb(236, 236, 236); }
 
 button:hover{background-color: rgb(243, 243, 243);}
-
 
 input[type="text"] {width: 200px;}
 textarea {width: 19.53rem}
@@ -244,15 +239,23 @@ input[type="radio"]{margin-right:0px;}
 .employees {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 60px 1fr 10px;
-    background-color:rgb(241, 240, 240);
+    background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
     border-radius: .3em;
 }
 
-.employees h2{
+.employees h1, h2 {
+    position: inherit;
     font-size: 1.9em;
     margin-top: 0px;
     margin-bottom: 12px;
     text-align: center;
-    background: rgba(0, 0, 0, 0);
+    opacity: 1;
+    background-color: inherit;
+    color: var(--accent1-color);
+
+    top: 0px;
+    width: inherit;
+    padding: inherit;
+    grid-column: span 5;
 }
