@@ -64,6 +64,27 @@ nav, p, section, article {
     height: auto;
 }
 
+.trip_hero {
+    position: relative;
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr (350px + 32px);
+}
+
+.trip_hero section{
+    grid-column: 1;
+}
+
+.trip_hero_img {
+    margin: 16px;
+    grid-column: 2;
+    grid-row: span 2;
+    width: 350px;
+}
+
+
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--accent1-color)
