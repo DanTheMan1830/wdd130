@@ -69,7 +69,7 @@ nav, p, section, article {
     display: grid;
 
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr (350px + 32px);
+    grid-template-columns: 1fr 382px;
 }
 
 .trip_hero section{
