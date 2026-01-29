@@ -1,21 +1,10 @@
 :root {
-    /*--primary-color: #A6E1FA;*/
-    /*non-photo blue*/
     --primary-color: #b6e6fb;
     --secondary-color: #2B4162;
-    /*indigo dye*/
     --accent1-color: #582707;
-    /*seal brown*/
     --accent2-color: #CCAD8F;
-    /*tan*/
-    /*--misc-color: #85C7DE;*/
-    /*sky blue*/
     --heading-font: "Palatino", serif;
     --light-text: #fff;
-    /*--body-font: "Bahnschrift", sans-serif;*/
-
-    /*switch heading-font to "Hepta Slab", serif;*/
-    /*switch body-font to "Funnel Display", sans-serif*/
 }
 
 * {
