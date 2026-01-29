@@ -8,10 +8,11 @@
     /*seal brown*/
     --accent2-color: #CCAD8F;
     /*tan*/
-    --misc-color: #85C7DE;
+    /*--misc-color: #85C7DE;*/
     /*sky blue*/
     --heading-font: "Palatino", serif;
-    --body-font: "Bahnschrift", sans-serif;
+    --light-text: #fff;
+    /*--body-font: "Bahnschrift", sans-serif;*/
 
     /*switch heading-font to "Hepta Slab", serif;*/
     /*switch body-font to "Funnel Display", sans-serif*/
@@ -57,12 +58,12 @@ h1 {
     text-align: center;
     opacity: 0.85;
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--light-text);
 }
 
 h2 {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--light-text);
     text-align: center;
     padding: .7rem;
     width: 840px;
@@ -97,6 +98,14 @@ article {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero article img {
