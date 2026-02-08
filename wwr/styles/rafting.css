@@ -100,14 +100,18 @@ section {
 
 section figure {
     place-self: center;
-    width: 150px;
+    width: 160px;
+    height: auto;
+    margin: 1.2rem 0px;
+    padding: 0px;
 }
 
 section figure img {
-    width: 150px;
+    width: inherit;
     height: auto;
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
+    place-self: center center;
 
 }
 
@@ -116,8 +120,9 @@ section p {
 }
 
 figcaption {
-    align-self: center;
+    position: relative;
     justify-self: center;
+    margin: 5px 0px;
 }
 
 section h2 {
