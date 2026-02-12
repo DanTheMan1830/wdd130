@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+table {
+    margin: 2rem;
+    border-collapse: collapse;
+
+    padding: 0px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+th,
+td {
+    padding: .4rem .6rem;
+
+}
+
+thead tr,
+tfoot tr {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+table,
+th,
+td {
+    border: 1px solid #888;
+}
