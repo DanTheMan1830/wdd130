@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<header>
+    <h1>
+        Basic HTML and CSS Quiz
+    </h1>
+</header>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <div class="form-item">
+                    <label for="q1">1. What does the acronym HTML stand for?</label>
+                    <!--Hyper Text Markup Language-->
+                    <input type="text" name="q1" id="q1">
+                </div>
+                <div class="form-item">
+                    <label for="q2">2. Describe the benefits of using &lt;div> in html:</label>
+                    <textarea name="q1" id="q1" cols="20" rows="3"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="q3">3. Which comment is valid syntax in CSS?</label>
+                    <!-- b -->
+                    <select name="q3" id="q3">
+                        <option value="" selected disabled> Choose One...</option>
+                        <option value="a">#This is a comment#</option>
+                        <option value="b">&lt;!--This is a comment--></option>
+                        <option value="c">/*This is a comment*/</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="q4">4. What is the right padding given this delcaration?</label>
+                    <code class="">
+                        display: grid;
+                        margin: 5px 8px 10px;
+                        padding: 0px 10px 5px;
+                    </code>
+                    <!-- 10 -->
+                    <input type="number" name="q4" id="q4">
+                </div>
+                <div class="form-item">
+                    <button type="submit" value="submit">Submit Quiz</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>

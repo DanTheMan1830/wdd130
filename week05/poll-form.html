@@ -15,27 +15,31 @@
 <body>
     <main>
         <form>
-            <div class="form-item column2">
-                <label for="text">Full Name:</label>
-                <input type="text" name="fullname" id="fullname" required>
-            </div>
-            <div class="form-item column2">
-                <label for="email">Email Address:</label>
-                <input type="email" name="useremail" id="useremail" required>
-            </div>
-            <div class="form-item column1">
-                <label for="browser">What is your favorite browser?</label>
-                <select name="browser" id="browser">
-                    <option value="Chrome">Chrome</option>
-                    <option value="Edge">Edge</option>
-                    <option value="Firefox">Firefox</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="form-item column1">
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" name="pet" id="pet">
-            </div>
+            <fieldset>
+                <div class="form-item column2">
+                    <label for="text">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="useremail" id="useremail" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet">
+                </div>
+            </fieldset>
             <div class="form-item">
                 <label for="feedback">List the places you have lived.</label>
                 <textarea name="feedback" id="feedback" cols="30" rows="4"
@@ -44,6 +48,7 @@
             <div class="form-item">
                 <button type="submit" value="submit">Submit Poll</button>
             </div>
+
         </form>
     </main>
 </body>
