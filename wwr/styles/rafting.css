@@ -20,6 +20,16 @@ footer {
     margin: 0 auto;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: auto 220px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
 header {
     display: grid;
     grid-template-columns: 5px auto 1fr;
@@ -27,6 +37,8 @@ header {
     background-color: var(--primary-color);
     color: var(--accent1-color);
     padding: 5px;
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
 nav,
@@ -95,7 +107,7 @@ section {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr auto 1fr 1fr;
-    padding: 45px 5px;
+    padding: 45px 5px 10px;
 }
 
 section figure {
@@ -156,7 +168,110 @@ article {
     opacity: .9;
 }
 
+h3 {
+    text-align: center;
+    font-size: 200%;
+}
+
+iframe {
+    padding: 1rem;
+}
+
 /* class selectors */
+
+.contact {
+    margin-top: 1rem;
+}
+
+.contact p {
+    text-align: center;
+    padding: .1rem;
+    margin: 0;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.contact-form {
+    margin-top: 0;
+    padding-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.purpose p {
+    grid-column: 1;
+    grid-row: span 3;
+}
+
+.employeeprofile {
+    width: 840px;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.employeeprofile h2 {
+    margin-left: 0;
+}
+
+form,
+fieldset {
+    border: none;
+}
+
+fieldset {
+
+    display: grid;
+    align-items: center;
+}
+
+.form-item {
+    display: inherit;
+    align-items: inherit;
+    grid-template-columns: 6rem 1fr;
+    padding: .2rem;
+}
+
+.form-item label {
+    padding: 0 .4rem;
+    justify-self: left;
+}
+
+.form-item button {
+    grid-column: span 2;
+    padding: .8rem;
+    font-size: 1rem;
+}
+
+.form-item p {
+    justify-self: left;
+    margin: 0 0 auto;
+    padding: 0 0 auto;
+}
+
+.form-message {
+    grid-template-columns: 6rem 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.form-message textarea {
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.form-check {
+    grid-template-columns: 1fr auto;
+    align-self: baseline;
+    justify-self: left;
+}
 
 .hero {
     position: relative;
@@ -184,6 +299,8 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+    margin: 0;
+    padding: .2rem;
 }
 
 .socialmedia img {
