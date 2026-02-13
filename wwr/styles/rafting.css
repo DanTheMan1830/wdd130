@@ -47,7 +47,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-
 }
 
 nav,
@@ -185,6 +184,7 @@ iframe {
 .contact h1 {
     position: relative;
     margin-bottom: 1rem;
+
 }
 
 .contact p {
@@ -258,7 +258,7 @@ fieldset {
 .form-item p {
     justify-self: left;
     margin: 0 0 auto;
-    padding: 0 0 auto;
+    padding: .35rem;
 }
 
 .form-message {
@@ -285,6 +285,7 @@ fieldset {
     display: block;
     width: 100%;
     height: auto;
+
 }
 
 .hero h1 {
