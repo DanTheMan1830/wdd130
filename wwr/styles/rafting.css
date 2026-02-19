@@ -4,6 +4,7 @@
     --accent1-color: #582707;
     --accent2-color: #CCAD8F;
     --heading-font: "Palatino", serif;
+    --body-font: "Bahnschrift", sans-serif;
     --light-text: #fff;
 }
 
@@ -11,6 +12,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
 }
 
 header,
@@ -60,6 +65,8 @@ li {
 
 nav a {
     padding: .1rem .8rem;
+    align-self: center;
+    text-wrap: nowrap;
 }
 
 nav li {
@@ -67,11 +74,6 @@ nav li {
     margin: .5rem;
     border: 1px solid #000;
     background-color: var(--light-text);
-}
-
-nav li a {
-    align-self: center;
-    text-wrap: nowrap;
 }
 
 h1,
@@ -86,7 +88,7 @@ h1 {
     width: 100%;
     padding: 12px;
     text-align: center;
-    opacity: 0.85;
+    opacity: 0.9;
     background-color: var(--secondary-color);
     color: var(--light-text);
 }
@@ -98,15 +100,17 @@ h2 {
     text-align: center;
     justify-self: center;
     padding: .7rem;
-    width: 840px;
+    width: 100%;
 }
 
 section {
     position: relative;
+
     display: grid;
     grid-template-rows: auto 1fr;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+
     padding: 45px 5px 10px;
+
 }
 
 section figure {
@@ -115,11 +119,13 @@ section figure {
     height: auto;
     margin: 1.2rem 0px;
     padding: 0px;
+    grid-row: 2;
 }
 
 section figure img {
     width: inherit;
     height: auto;
+    grid-row: 2;
     padding: 5px;
     margin: 0px;
     place-self: center center;
@@ -133,18 +139,21 @@ figcaption {
 }
 
 section h2 {
-    grid-column: 1/6;
+    grid-column: span 5;
     margin: .3rem;
 }
 
 section img {
+    grid-row: 2;
     align-self: center;
     justify-self: center;
     width: 300px;
     height: auto;
+
 }
 
 section p {
+    grid-row: 2;
     grid-column: span 2;
     position: relative;
     align-self: center;
@@ -163,6 +172,25 @@ article {
     opacity: .9;
 }
 
+.trip_hero {
+    position: relative;
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 382px;
+}
+
+.trip_hero section {
+    grid-column: 1;
+}
+
+.trip_hero_img {
+    margin: 16px;
+    grid-column: 2;
+    grid-row: span 2;
+    width: 350px;
+}
+
 h3 {
     text-align: center;
     font-size: 200%;
@@ -173,6 +201,138 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Form Stuff */
+
+form {
+    position: relative;
+    max-width: 840px;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+}
+
+form,
+fieldset {
+    border: none;
+}
+
+.home_signup {
+    margin-top: 3.5rem;
+}
+
+fieldset {
+    display: grid;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid rgb(0, 0, 0 / .2);
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: inherit;
+    margin: .05rem 0;
+}
+
+legend {
+    padding: .5rem;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+label {
+    text-align: right;
+    padding-right: .8rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.4rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: var(--accent2-color);
+    color: black;
+    border: 1px solid black;
+    border-radius: .4rem;
+    padding: .4rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    color: var(--light-text);
+}
+
+.newsletter-signup-form {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 5px;
+    margin-top: -3.39rem;
+    align-content: center;
+}
+
+.newsletter-signup-form p {
+    margin: 1rem;
+    margin-top: 4.5rem;
+}
+
+.newsletter-signup-form div h2 {
+    width: fit-content;
+}
+
+.form-item {
+    display: inherit;
+    align-items: inherit;
+    grid-template-columns: 6rem 1fr;
+    padding: .2rem;
+}
+
+.form-item label {
+    padding: 0 .4rem;
+    justify-self: left;
+}
+
+.form-item button {
+    grid-column: span 2;
+    padding: .8rem;
+    font-size: 1.1rem;
+}
+
+.form-item p {
+    justify-self: left;
+    margin: 0 0 auto;
+    padding: .35rem;
+}
+
+.form-message {
+    grid-template-columns: 6rem 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.form-message textarea {
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.form-check {
+    grid-template-columns: 1fr auto;
+    align-self: baseline;
+    justify-self: left;
 }
 
 /* class selectors */
@@ -222,66 +382,12 @@ iframe {
     border-radius: .3rem;
 }
 
-.employeeprofile h2 {
-    margin-left: 0;
-}
-
-form,
-fieldset {
-    border: none;
-}
-
-fieldset {
-
-    display: grid;
-    align-items: center;
-}
-
-.form-item {
-    display: inherit;
-    align-items: inherit;
-    grid-template-columns: 6rem 1fr;
-    padding: .2rem;
-}
-
-.form-item label {
-    padding: 0 .4rem;
-    justify-self: left;
-}
-
-.form-item button {
-    grid-column: span 2;
-    padding: .8rem;
-    font-size: 1rem;
-}
-
-.form-item p {
-    justify-self: left;
-    margin: 0 0 auto;
-    padding: .35rem;
-}
-
-.form-message {
-    grid-template-columns: 6rem 1fr;
-    grid-template-rows: auto 1fr;
-}
-
-.form-message textarea {
-    grid-row: 2;
-    grid-column: span 2;
-}
-
-.form-check {
-    grid-template-columns: 1fr auto;
-    align-self: baseline;
-    justify-self: left;
-}
-
 .hero {
     position: relative;
 }
 
 .hero img {
+    margin: 0px 10px 0px 0px;
     display: block;
     width: 100%;
     height: auto;
@@ -304,7 +410,6 @@ fieldset {
 
 .socialmedia a {
     text-decoration: none;
-    margin: 0;
     padding: .2rem;
 }
 
